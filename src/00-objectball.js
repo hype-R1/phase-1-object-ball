@@ -1,14 +1,59 @@
 function gameObject() {
   return {
     home: {
-      teamName: "",
-      colors: [],
+      teamName: "Brooklyn Nets",
+      colors: ["Black", "White"],
       players: {
-        "Alan Anderson": {},
-        "Reggie Evans": {},
-        "Brook Lopez": {},
-        "Mason Plumlee": {},
-        "Jason Terry": {},
+        "Alan Anderson": {
+            "number": 0,
+            "shoe": 16,
+            "points": 22,
+            "rebounds": 12,
+            "assists": 12,
+            "steals": 3,
+            "blocks": 1,
+            "slamDunks": 1,
+        },
+        "Reggie Evans": {
+            "number": 30,
+            "shoe": 14,
+            "points": 12,
+            "rebounds": 12,
+            "assists": 12,
+            "steals": 3,
+            "blocks": 1,
+            "slamDunks": 1,
+        },
+        "Brook Lopez": {
+            "number": ,
+            "shoe":,
+            "points":
+            "rebounds":
+            "assists":
+            "steals":
+            "blocks":
+            "slamDunks":
+        },
+        "Mason Plumlee": {
+            "number":,
+            "shoe":,
+            "points":
+            "rebounds":
+            "assists":
+            "steals":
+            "blocks":
+            "slamDunks":
+        },
+        "Jason Terry": {
+            "number":,
+            "shoe":,
+            "points":
+            "rebounds":
+            "assists":
+            "steals":
+            "blocks":
+            "slamDunks":
+        },
       },
     },
     away: {
@@ -24,6 +69,31 @@ function gameObject() {
     },
   };
 }
+
+
+
+function goodPractices() {
+  let game = gameObject();
+  for (let gameKey in game) {
+    // are you ABSOLUTELY SURE what 'gameKey' is?
+    // use the debugger to find out!
+    // debugger;
+    let teamObj = game[gameKey];
+    for (let teamKey in teamObj) {
+      // are you ABSOLUTELY SURE what 'teamKey' is?
+      // use debugger to find out!
+      //   debugger;
+
+      // what is 'data' at each loop through out this block?
+      // when will the following line of code work and when will it break?
+      let data = teamObj.player;
+      for (let key in data) {
+        // debugger;
+      }
+    }
+  }
+}
+
 
 // -----------------------------------------
 // let x = 99;

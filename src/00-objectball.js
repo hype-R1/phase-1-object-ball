@@ -25,11 +25,23 @@ function gameObject() {
   };
 }
 
-// console.log(gameObject());
+// -----------------------------------------
+// let x = 99;
+// let y = 42;
+// debugger;
+// console.log("x:", x);
 
-// function homeTeamName() {
-//   let object = gameObject();
-//   return object["home"]["teamName"];
+// let oo = {
+//   foo: 42,
+//   bar: 83,
+//   baz: 79,
+// };
+
+// for (let key in oo) {
+//   //iterating over the keys in an obj
+//   let value = oo[key];
+//   //declaring variable and assigning it to the accessing of the obj[key]
+//   console.log(key, value);
 // }
-
-// console.log(homeTeamName("Brooklyn Nets"));
+// console.log(Object.keys(oo));
+// console.log(Object.entries(oo));

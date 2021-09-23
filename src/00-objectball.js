@@ -115,6 +115,32 @@ function gameObject() {
   };
 }
 
+console.log(gameObject());
+
+function homeTeamName() {
+  let object = gameObject();
+  return object["home"]["teamName"];
+}
+
+console.log(homeTeamName());
+
+function numPointsScored(player) {
+  // look up player, return points
+  let game = gameObject();
+  //   game = ƒ and it is also an object
+  debugger;
+  for (let gameKey in game) {
+    //  gameKey = home / away
+    let teamKeys = game[gameKey];
+    debugger;
+    // teamKeys = the 3 keys of each team: colors, players, name
+
+    }
+  }
+}
+
+console.log(numPointsScored());
+
 // function goodPractices() {
 //   let game = gameObject();
 //   for (let gameKey in game) {

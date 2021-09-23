@@ -1,12 +1,5 @@
-function thisIsATest(){
-    returns "Testing 123";
-}
-
-console.log(thisIsATest());
-
-
 function gameObject(){
-    return {
+    let obj =  {
     
         home: {
             teamName: 
@@ -23,6 +16,7 @@ function gameObject(){
             }   
         }
     }
+    return obj;
 }
 
 console.log(gameObject());
